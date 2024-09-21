@@ -1,0 +1,135 @@
+<html></html>
+    <head>
+        <title>Personal Details</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+            margin: 2px;
+            background: url("https://cdn.prod.website-files.com/5a9ee6416e90d20001b20038/64c0b1ca17a24e60d144141e_-7.jpg"), #010614;
+            background-size: cover;
+
+            
+        }
+        h1{
+            color: rgb(51, 21, 128);
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        fieldset{
+            border: bold;
+            margin-bottom: 10px;
+
+        }
+        form{
+            width:700px;
+            background-color:transparent;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgb(26, 25, 25);
+        }
+        input[type=text],input[type=date],textarea,input[type=email],input[type=tel],input[type=password]{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid rgb(226, 12, 12);
+            border-radius: 4px;
+            background-color: transparent;
+            color: rgb(16, 1, 1);
+        }
+        button{
+           
+            color: rgb(252, 248, 248);
+            cursor: pointer;
+            background-color: green;
+            padding: 10px;
+            font-size: medium;
+            margin-left:170px ;
+            width: 50%;
+           
+        }
+        p{
+            text-align: center;
+        }
+        /* Media Queries */
+    @media (max-width: 768px) {
+      .wrapper {
+        width: 90%;
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .wrapper {
+        width: 95%;
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      button {
+        font-size: 14px;
+        padding: 10px 15px;
+      }
+
+      .input-field input {
+        font-size: 14px;
+      }
+
+      .input-field label {
+        font-size: 14px;
+      }
+    }
+    </style>
+    </head>
+    <body>
+        
+        <form>
+            
+            <fieldset>
+                <h1><b><u>PERSONAL DETAILS</u></b></h1>
+               <label> <b>Enter First Name:</b></label>
+            <input type="text" name="first name" required >
+            <br><br>
+                <label> <b>Enter Last Name:</b></label>
+                <input type="text" name="Last name" required>
+                <br><br>
+                    <label><b> Enter Email Id:</b></label>
+                    <input type="email" name="email" required>
+                    <br><br>
+                    <label><b>Enter password:</b></label>
+            <input type="password" name="password" required>
+            <br><br>
+                        <label><b>Phone Number:</b></label>
+                        <input type="tel" name="number" required>  
+                        <br><br>      
+                <label><b>Date Of Birth:</b></label>
+                <input type="date" name="dob" required>
+                <br><br>
+                <label><b>Gender:</b></label>
+                <input type="radio" name="gender" value="male"required>male
+                <input type="radio" name="gender" value="female" required>female
+                <input type="radio" name="gender" value="other" required>other
+                <br><br>
+                <label> <b>Enter Your Address:</b></label>
+                <textarea cols="=50" rows="5"value="Address" required></textarea>
+                <br><br>
+                <label><b>Hobbies:</b></label>
+                <input type="checkbox"  value="Travelling"required>Travelling
+                <input type="checkbox"  value="reading"required>reading the book
+                <input type="checkbox" value="cooking"required>cooking
+                <br><br>
+               <button type="submit" >Register</button>
+               <p>Already have an Account?
+                <a href="index.html">Login</a>
+            </p>
+                
+            </fieldset>
+            </form>
+            
+    </body>
+</html>
